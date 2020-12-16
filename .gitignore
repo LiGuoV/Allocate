@@ -4,3 +4,5 @@ syntax:glob   # This line is not needed for .gitignore files.
 __pycache__/  # Exclude the whole folde
 # Project exclude paths
 /src/allocation.egg-info/
+venv
+.idea
