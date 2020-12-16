@@ -10,6 +10,7 @@ def get_api_url():
 def get_db_uri():
     # return 'sqlite:///./db.db'
     host = os.environ.get('DB_HOST', '111.229.124.12')
+
     port = 54321 if host == 'localhost' else 5432
     password = os.environ.get('DB_PASSWORD','abc123')
     user, db_name = 'postgres', 'allocation'
