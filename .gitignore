@@ -1,0 +1,6 @@
+#find . -type f -name "*.py[co]" -delete -or -type d -name "__pycache__" -delete
+syntax:glob   # This line is not needed for .gitignore files.
+*.py[cod]     # Will match .pyc, .pyo and .pyd files.
+__pycache__/  # Exclude the whole folde
+# Project exclude paths
+/src/allocation.egg-info/
