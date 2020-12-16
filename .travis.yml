@@ -3,3 +3,7 @@ language: python
 
 script:
   - make all
+
+branches:
+  except:
+    - /.*_exercise$/
