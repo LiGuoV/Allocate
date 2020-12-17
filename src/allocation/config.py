@@ -17,7 +17,7 @@ def get_db_uri():
     return f"postgresql://{user}:{password}@{host}:{port}/{db_name}"
 
 def get_redis_host_and_port():
-    host = os.environ.get('DB_HOST', '111.229.124.12')
+    host = os.environ.get('REDIS_HOST', '111.229.124.12')
     port = 6379
     password = os.environ.get('DB_PASSWORD',)
     return dict(host=host, port=port,password=password)
